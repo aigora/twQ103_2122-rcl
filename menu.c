@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 //vector de estructura 
-
 struct TEmpleado{
 	char nombre[50], apellido[50];
 	int Nexpediente[10];
@@ -11,7 +10,7 @@ struct TEmpleado{
 int main(){
 	int i=0;
 	int opcion;
-	struct TEmpleado Empleados[300]; //guardamos el espacio en suficiente para 300 empelados 
+	struct TEmpleado Empleados[300]; //guardamos el espacio suficiente para 300 empelados 
 	
 	printf("Registrarse\n");
 	printf("Introduce tu normbre\n Nombre:");
