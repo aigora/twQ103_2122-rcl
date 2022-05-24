@@ -1,9 +1,11 @@
 #include <stdio.h>
-#define TAM_MAX 300
+#define TAM_MAX 2
 
 struct TEmpleado{
 	char nombre[50]; 
 	char apellidos[50];
+	char NombreUsuario[50];
+    char Contrasena[50];
 	int Nexpediente[10];
 };
 
@@ -55,40 +57,75 @@ int main() {
 	 //Se presenta el menu de opciones con un bucle, y que ese bucle no se termine nunca hasta que no se pulse el boton de salir.
 	 while(1) {
 	 	fflush(stdin);
-	 	printf("R - Registrarse.\n");
-	 	printf("N - Nivel 1,2,3.\n");
-	 	printf("I - Instrucciones del juego.\n");
-	 	printf("S - Salir del juego.\n");
+	 	printf("1 - Registrarse.\n");
+	 	printf("2 - Iniciar Sesion.\n");
+	 	printf("3 - Nivel 1,2,3.\n");
+	 	printf("5 - Salir del juego.\n");
 	 	scanf("%c", &opcion);
 	 	switch(opcion) {
-	 		case 'R':
-	 			// Primero se pregunta cuantos empleados hay inicalmente. 
-                printf("Indica el numero de empleados que van a jugar:\n");
-                scanf("%d", &contador);
+	 		case '1':
+	 			while(1) {
+	 				fflush(stdin);
+	 				printf("A - Jugador 1.\n");
+	 				printf("B - Jugador 2.\n");
+	 				scanf("%c", &opcion);
+	 			switch(opcion) {
+	 				case 'A': 
+	 				// Se pregunta que jugaor es, si el jugador 1 o el jugador 2: 
+                    printf("Indica el numero de jugador:\n");
+                    scanf("%d", &contador);
                 
-				 // Pedimos los datos de los empleados.
-				for(i=0; i<contador; i++) {
-     	        printf("Introduce tu nombre:\n");
-     	        scanf("%s", empleados[i].nombre);
-     	        printf("Introduce tus apellidos:\n");
-     	        fflush(stdin);
-     	        scanf("%c", &empleados[i].apellidos);
-     	        printf("Introduce tu numero de expedinte:\n");
-     	        scanf("%f", &empleados[i].Nexpediente);
-                }
-				for (i=0; i<contador; i++) {
+				    // Pedimos los datos del primer empleado1.
+				   for(i=0; i<contador; i++) {
+     	           printf("Introduce tu nombre:\n");
+     	           scanf("%s", empleados[i].nombre);
+     	           printf("Introduce tus apellidos:\n");
+     	           fflush(stdin);
+     	           scanf("%c", &empleados[i].apellidos);
+     	           printf("Introduce tu numero de expediente:\n");
+     	           scanf("%f", &empleados[i].Nexpediente);
+                   }
+				   for (i=0; i<contador; i++) {
 	 				printf ("%s - %c - %f\n", empleados[i].nombre, empleados[i].apellidos, empleados[i].Nexpediente);
-			}
-				 break;
-			case 'N':{
-				printf("Nivel 1 2 3\n");
+			       }
+			        intro ();
+			        break;
+			    
+			        case 'B':
+			        // Se pregunta que jugaor es, si el jugador 1 o el jugador 2: 
+                    printf("Indica el numero de jugador:\n");
+                    scanf("%d", &contador);
+                
+				    // Pedimos los datos del primer empleado2.
+				    for(i=0; i<contador; i++) {
+     	            printf("Introduce tu nombre:\n");
+     	            scanf("%s", empleados[i].nombre);
+     	            printf("Introduce tus apellidos:\n");
+     	            fflush(stdin);
+     	            scanf("%c", &empleados[i].apellidos);
+     	            printf("Introduce tu numero de expediente:\n");
+     	            scanf("%f", &empleados[i].Nexpediente);
+                    }
+				    for (i=0; i<contador; i++) {
+	 				printf ("%s - %c - %f\n", empleados[i].nombre, empleados[i].apellidos, empleados[i].Nexpediente);
+			        }
+			         intro ();
+				     break;
+				    }
+				    }
+			case '2':{
+				printf("Iniciar Sesion\n Usuario:");
+                scanf("%s", &empleados[i].NombreUsuario);
+                printf("Contrasena:");
+                scanf("%s", &empleados[i].Contrasena);
+                intro ();
 				break;
 			}
-			case 'I':{
-			    intro ();				
+			case '3':{
+				printf("Nivel 1 2 3\n");				
 				break;
 			}
-		   case 'S':{
+		   case '4':{
 		   	printf("Saliendo del juego.\n");
 		   	exit(0);
 		   }
@@ -99,4 +136,4 @@ int main() {
 	}
   }
   	return 0;
-}	
+}
