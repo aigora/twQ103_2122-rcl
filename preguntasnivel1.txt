@@ -1,0 +1,15 @@
+calcula los valores de x de la siguiente ecuacion: (x^2) - (5*x) + 6
+a) x1=1 y x2=2
+b) x1=3 y x2=2 
+c) x1=1 y x2=3
+
+Cesar es más alto que Mario pero mas bajo que Luis. Si  Pepe es mas alto que Cesar y mas bajo que Luis. Ordena de mayor a menos altura
+a)LUIS,PEPE,CESAR,MARIO 
+b)MARIO,CESAR,PEPE,LUIS
+c)PEPE,LUIS,CESAR,MARIO
+
+calcula el valor de x: ((2*x)-(x+1)/4) = ((5*x)+2/6)
+a)2
+b)-1 
+c)0
+
