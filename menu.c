@@ -135,7 +135,7 @@ int main () {
             intro ();
 		break;
         
-        
+        ///programado en otro prarama PROGRAMA.C esto solo abarca registrarse, iniciar sesion y salir 
         /*case 3:
         	printf("\n");
         	printf("COMIENZA EL JUEGO");
