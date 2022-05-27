@@ -5,4 +5,4 @@ Nuestro proyecto consiste en superar una yinkana prueba a prueba, debido al cinc
 Rocío Molina Ruiz: @rociomolinaruuiz, Laura Rincón Gaitero: @laaurarg, Carlota Calderón García: @carlota. calderon
 
 ## Objetivos del trabajo
-Nuestro proyecto consiste en una yinkana compuesta por tres fases, inicial, intermedia y final. El empleado seleccionado deberá ir superando las pruebas para poder pasar de fases, ya que la segunda y tercera fase tienen el requisito de un mínimo de puntos para acceder a ella, si no tienen ese numero de puntos inmediatamente serán eliminados.
+Nuestro proyecto consiste en una yinkana compuesta por tres fases, inicial, intermedia y final. El empleado seleccionado deberá ir superando las pruebas con el cometido de conseguir el ansiado ascenso. Sin embargo, si no supera dichas pruebas, perdera la oprtunidad de ser el empleado con el sueldo mas alto. 
